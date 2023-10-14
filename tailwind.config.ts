@@ -8,32 +8,43 @@ export default {
 	darkMode: 'class',
 	content: ['./src/**/*.{html,js,svelte,ts}', join(require.resolve('@skeletonlabs/skeleton'), '../**/*.{html,js,svelte,ts}')],
 	theme: {
-		extend: {},
+	  extend: {
+		container: {
+		  center: true,
+		  padding: '1rem',
+		  maxWidth: {
+			'default': 'calc(100% - 2rem)',
+			'sm': '560px',
+			'md': 'calc(100% - 144px)',
+		  },
+		},
+	  },
 	},
 	plugins: [
-		forms,
-		typography,
-		skeleton({
-			themes: {
-				preset: [
-					{
-						name: 'sahara',
-						enhancements: true,
-					},
-					{
-						name: 'rocket',
-						enhancements: true,
-					},
-					{
-						name: 'hamlindigo',
-						enhancements: true,
-					},
-					{
-						name: 'modern',
-						enhancements: true,
-					},
-				],
+	  forms,
+	  typography,
+	  skeleton({
+		themes: {
+		  preset: [
+			{
+			  name: 'sahara',
+			  enhancements: true,
 			},
-		}),
+			{
+			  name: 'rocket',
+			  enhancements: true,
+			},
+			{
+			  name: 'hamlindigo',
+			  enhancements: true,
+			},
+			{
+			  name: 'modern',
+			  enhancements: true,
+			},
+		  ],
+		},
+	  }),
 	],
-} satisfies Config;
+  }
+  
