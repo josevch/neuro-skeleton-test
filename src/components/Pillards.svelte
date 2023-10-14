@@ -20,7 +20,7 @@
 
 <div class="w-full bg-slate-500 py-16">
     <div class="container mx-auto">
-        <div class="flex items-center justify-center gap-x-32 gap-y-16 flex-wrap">
+        <div class="flex items-center justify-center gap-x-16 gap-y-16 flex-wrap">
            {#each items as item (item.id)}
             <a href="#">
                 <Avatar src={item.image} alt={item.title} class=" mx-auto w-32 h-32" border="border-4  border-surface hover:!border-primary-500"
