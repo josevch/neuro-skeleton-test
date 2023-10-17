@@ -12,9 +12,9 @@
                 </div>
                 
                 <div class="flex-1">
-                    <div class="card">
+                    <div class="card ">
                         <header class="card-header">
-                            <img class=" rounded-2xl" src="https://picsum.photos/500/600" alt="" srcset="">
+                            <img class=" rounded-2xl" src="https://picsum.photos/600/600" alt="" srcset="">
                         </header>
                         <section class="p-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis, eligendi fugit. Est deleniti repudiandae accusantium tenetur expedita soluta labore vero.</section>
                        
